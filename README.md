@@ -35,7 +35,7 @@ HyTSSN is a Python-based project designed for simulating and analyzing hybrid te
 ## Prerequisites
 - Python 3.10 or higher.
 - Required Python libraries:
-  - (List libraries here, e.g., NumPy, Matplotlib, etc., if applicable).
+  - Available in **`requirements.txt`**.
 
 ---
 
@@ -60,19 +60,20 @@ HyTSSN is a Python-based project designed for simulating and analyzing hybrid te
    ```bash
    python main.py
    ```
-2. Customize model parameters in the respective source files (`Models.py`, `Encoder.py`, etc.).
+2. Customize model parameters in the respective source files (`main.py`, `Models.py`, and `Encoder.py`).
 
 ---
 
 ## Architecture Overview
-The **Hybrid Temporal-Spatial Spiking Neural Network** architecture is composed of:
-- **Input Layer**: Encodes input stimuli using the `Encoder.py` module.
-- **Hidden Layers**: Simulates synaptic interactions (`Synapse.py`) and dendritic processing (`Dendrite.py`).
-- **Output Layer**: Aggregates results to provide final outputs.
-
 <p align="center">
   <img src="https://github.com/TheRNB/HyTSSN/blob/main/Model%20Architecture%20Design.png" width="510">
 </p>
+
+The **Hybrid Spiking Neural Network - Transformer Model** architecture is composed of:
+
+- **Input Layer**: Inputs the encoded input stimuli using the `Encoder.py` module.
+- **Hidden Layers**: Simulates the middle layers of a Cortical Column by synaptic interactions (`Synapse.py`) and dendritic processing (`Dendrite.py`).
+- **Output Layer**: Like a Cortical Column, aggregates results to provide final results.
 
 ---
 
